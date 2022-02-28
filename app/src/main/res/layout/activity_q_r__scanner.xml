@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FF8D8D"
+    tools:context=".QR_Scanner">
+
+    <TextView
+        android:id="@+id/idTVscanned"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:text=""
+        android:background="#FF8D8D"
+        android:padding="5dp"
+        android:textColor="@color/black"
+        android:gravity="bottom"
+
+        />
+
+    <eu.livotov.labs.android.camview.ScannerLiveView
+        android:id="@+id/camView"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/idTVscanned"
+        />
+
+
+
+</RelativeLayout>
